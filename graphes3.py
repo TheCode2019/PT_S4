@@ -5,7 +5,7 @@ import pandas as pd
 # Lire les données depuis un fichier CSV
 df = pd.read_csv('resultats_tests.csv')
 
-# Supposons que le CSV a les colonnes spécifiées lors de l'écriture du fichier
+
 entropies_initiales = df['EntropieInitiale'].tolist()
 scores = df['Score'].tolist()
 comparaisons = df['Comparaisons'].tolist()
