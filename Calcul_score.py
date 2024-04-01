@@ -30,7 +30,7 @@ def calculer_score(comparaisons, deplacements, entropie_initiale, entropie_final
     # Initialiser le score à 10
     score = 10
     
-    # Exemple d'ajustement de score basé sur les comparaisons et déplacements
+    # ajustement de score basé sur les comparaisons et déplacements
     score -= (comparaisons + deplacements) / (2 * len(donnees_test))
     
     # Ajuster le score en fonction de la réduction de l'entropie
@@ -92,7 +92,7 @@ def calculer_score(comparaisons, deplacements, entropie_initiale, entropie_final
     else:
         score -= 1  # Pénalité si l'entropie n'est pas réduite
     
-    # Appliquez d'autres ajustements basés sur les caractéristiques des données.
+    # Applique d'autres ajustements basés sur les caractéristiques des données.
     score = ajuster_score_en_fonction_des_donnees(score, donnees_test)
     
     # S'assurer que le score est entre 1 et 10.
